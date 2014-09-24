@@ -1,0 +1,52 @@
+html {
+  font-size: 1.188em; /* 19px */
+  line-height: 1.33em;
+  font-family:sans-serif;
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin:0;
+}
+
+h1 {
+  color:white;
+  text-align:center;
+  font-size: 5em;
+}
+
+h2 {
+  text-align:center;
+  color:white;
+  font-size: 1.3em;
+}
+
+#logos {
+  list-style-type: none;
+} /*take out bullet points*/
+
+#logos li {
+  float:left;
+  width:32%;
+}
+
+.clear {
+  clear:both;
+}
+
+.module {
+  padding:2em;
+}
+
+#module1 {
+  background-color:green;
+}
+
+#module2 {
+  background-color: yellow;
+}
+
+#module4 {
+  background-color: yellow;
+}
