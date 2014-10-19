@@ -22,13 +22,27 @@ h2 {
   font-size: 1.3em;
 }
 
+h3 {
+   text-align:left;
+   font-family: Gill Sans
+}
+
+h4 {
+  text-align: left;
+  font-family: Gill Sans;
+}
+
+p {
+  font-family: Gill Sans;
+}
+
 #logos {
   list-style-type: none;
 } /*take out bullet points*/
 
-#logos li {
-  float:left;
-  width:32%;
+#logos div {
+  float:center;
+  width:50%;
 }
 
 .clear {
