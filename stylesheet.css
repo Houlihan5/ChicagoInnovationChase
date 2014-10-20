@@ -1,25 +1,52 @@
+/* 
+YUI 3.17.2 (build 9c3c78e)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/ 
+*/
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
 html {
-  font-size: 1.188em; /* 19px */
-  line-height: 1.33em;
-  font-family:sans-serif;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+html {
+  font-family: "Gill Sans", "Times new Roman", "Batang", "Droid Sans", "Segoe UI", serif;
+  line-height: 1em; /* 19px @ 1:1.5 Modular Scale */;
+  font-size: 1.188em; 
   margin:0;
   padding:0;
 }
 
 body {
+  line-height: 1.781em;
   margin:0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.188em;
+  margin: 1.21em;
+  margin-left: 3.167em;
 }
 
 h1 {
   color:white;
   text-align:center;
-  font-size: 5em;
+  font-size: 3.375em;
+  line-height: .059em;
+  margin: 1.21em;
+
 }
 
 h2 {
   text-align:center;
   color:white;
-  font-size: 1.3em;
+  font-size: 1.781em;
+  line-height: .792em
 }
 
 h3 {
@@ -35,9 +62,11 @@ h4 {
 p {
   font-family: Gill Sans;
 }
-
+/* Need to enlarge logo */
 #logos {
   list-style-type: none;
+  width: 90%;
+  padding: 2em;
 } /*take out bullet points*/
 
 #logos div {
@@ -65,4 +94,18 @@ p {
   background-color: yellow;
 }
 
+
+  img {
+  max-width: 100%;
+  min-width: 10%
+  height: auto;
+  display : boxed;
+  position : relative;
+  margin: 0;
+
+}
+footer {
+  background-color:green;
+}
+}
 
