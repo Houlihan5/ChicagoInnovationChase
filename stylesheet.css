@@ -22,16 +22,23 @@ html {
 }
 
 body {
-  line-height: 1.781em;
+  line-height: 1.5em;
   margin:0;
 }
 
+@media all and (max-width: 45.652em) and (min-width: 30.435em), (min-width: 68.478em) 
+
+@media only screen and (min-device-width: 20em)
+   and (max-device-width: 30em)
+
+
+
 p {
   font-size: 1em;
-  line-height: 1.188em;
+  line-height: 1em;
   margin: 1.5em;
   margin-left: 3.375em;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 
 }
 
@@ -100,7 +107,7 @@ li.a {
 h1 {
   color:white;
   text-align:center;
-  font-size: 1em; /* testing new font size 3.375em;*/
+  font-size: 1.188em; /* testing new font size 3.375em;*/
   text-transform: uppercase; /*All caps is a design choice...*/
   line-height: .059em;
   margin: 1.21em;
