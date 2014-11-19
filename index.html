@@ -3,23 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+   
     <title>Chicago Innovation Chase</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   </head>
 
   <body>
-    <div class="module" id="module1">
+    <div id="header">
+    <div id="navbar">
+      <!--linked my pages-->
+        <ul class="navigationselectors">  
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>  
+
+      <!--changed module to header-->
       <!--Added the whole name of competition-->
-      <h1>CHICAGO</h1>
-      <H1>INNOVATION</H1>
-      <h1>CHASE</h1>
-      <h2>Inter-collegiate Innovation Tournament</h2>
+    </div>
+     
+       <!--made changes to Chicago Innovation Chase per Karl's recommendations-->
+      <h1>CHICAGO INNOVATION <b><br>CHASE</b></h1>
+      <!--moving title to description of Chase
+      <h2>Inter-collegiate Innovation Tournament</h2>-->
     </div>
 
-    <div class="module" id="module2">
+     <div id="summary">
       <!--Changed intro to Chase to be more concise and commented correctly-->
       <!--added additional paragraph to identify the target Chase audience and the 
       importance of the competition-->
+      <!--took Inter-Collegiate Innovation Tournament out of header - it did not belong there-->
+      <!--Inter-Collegiate title is a nice lead in to the description of the Chase-->
+      <h3><b>INTER-COLLEGIATE INNOVATION TOURNAMENT</b></h3>
         <p>
           The Chicago Innovation Chase is a national
           inter-collegiate innovation tournament designed in collaboration with leading
@@ -36,16 +51,30 @@
           develop and test our curriculum each year, keeping it consistently cutting-edge,
           current, and high impact.
         </p>
+      </div>
 
-    </div>
+        <!--Added IIT Chase past photo to highlight IIT student Chase competitors-->
 
-      <!--Added IIT Chase past photo to highlight IIT student Chase competitors-->
+<!--trying photo with figcaption instead of module
     <div class="module" id="module6">
-      <img src="images/ChaseStudentsWithAnnaNeil.png" alt="Chase Student Competitors" />
     </div>
 
-    <div class="module" id="module4">
-      <h3>DO YOU HAVE WHAT IT TAKES TO BE A CHASE COMPETITOR</h3>
+      
+      
+      <img src="images/ChaseStudentsWithAnnaNeil.png" alt="Chase Student Competitors" />
+    </div>-->
+    <!--Karl's recommendation for figure class worked much better than the old syntax I used-->
+    <!--only problem I kept having was validator errors because I did not close figure tag-->
+
+    <div>
+    <figure class="photo">
+      <img src="images/ChaseStudentsWithAnnaNeil.png" alt="Photo of Chase Student Competitors" />
+      <figcaption>Competitors from last year's competition</figcaption>
+    </figure>
+    </div>
+
+    <div id="inbrief">
+      <h3><b>DO YOU HAVE WHAT IT TAKES TO BE A CHASE COMPETITOR</b></h3>
         <p>
           What we are looking for is spunk, smarts, integrity, honor, quick thinking, restlessness, creativity, good attitude, and mad skill.  We are looking for IIT students who think science is cool, who think design is important, who get bored easily, and who want to save the world.
         </p>
@@ -55,43 +84,31 @@
         </p>
     </div>
 
-    <div class="module" id="module3">
+    
  
       <!--Making page just for the Chicago local Chase Spring 2014 competition-->
-      <h3>JOIN US IF YOU HAVE WHAT IT TAKES</h3>
+      <!--deleted because it repeated itself<h3>JOIN US IF YOU HAVE WHAT IT TAKES</h3>-->
       <div id="logos">
         <img src="images/IIT.PNG" width="100" alt="ILLINOIS INSTITUTE OF TECHNOLOGY" />
-    </div>
+      <!--Best advice from Karl to place in list-->
       
-      <div class="clear"></div>
-        <P>
-          ELIGIBILITY:  Current IIT students
-        </P>
-
-        <p>
-          WHEN: March 20, 2015 to March 22, 2015
-        </p>
-
-        <p>
-          WHERE:  IIT Main Campus
-        </p>
-        <p>
-          TIME:  Check-in at 3:00pm on March 20, 2015
-        </p>
-
-        <p>
-          SIGNUP DEADLINE:  February 20, 2015
-        </p>
-
-        <p>
-          APPLICATION SITE:  Available January 2, 2015
-        </p>
+      <div class="table">
+        <ul>
+          <li class="headings"></LI>
+          <li>ELIGIBILITY: <h2>Current IIT students</h2></li>
+          <li>WHEN: March 20, 2015 to March 22, 2015</li>
+          <li>WHERE: IIT Main Campus</li>
+          <li>TIME: Check-in at 3:00pm on March 20, 2015</li>
+          <li>SIGNUP DEADLINE:  February 20, 2015</li>
+          <li>APPLICATION SITE:  Available January 2, 2015</li>
+        </ul>
+      </div>
       </div>
 
-      <!--Added footer with contact information-->
-
-    <div class="module" id="module5">
-      <footer id="footer">
+      
+       
+    <div id="footer">
+      <!--contact us page will be a new page
         <h3>CONTACT US</h3>
         <p>
           <a href="mailto:jodihoulihan@gmail.com" title="email me">Email Jodi Houlihan</a>
@@ -99,9 +116,9 @@
 
         <p>
         Program Administrator, Chicago Innovation Chase for further details
-      </p>
-      </footer>
-    </DIV>
+      </p>-->
+      Chicago Innovation Chase  2014
+    </div>
 
   </body>
 

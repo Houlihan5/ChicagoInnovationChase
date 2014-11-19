@@ -31,27 +31,79 @@ p {
   line-height: 1.188em;
   margin: 1.21em;
   margin-left: 3.167em;
+  padding-bottom: 1em;
+
+}
+div {
+  padding: 1.5em;
+}
+
+#navbar {
+  position: fixed;
+  top: 10px;
+  left: 75%;
+  margin-left: -254px
+  background-color: yellow;
+  padding: 0%;
+
+}
+
+#header {
+  padding: 1.5em;
+  text-align: center;
+  background-color: green;
+  /*did not want a radius border
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;-->*/
+}
+
+ul.a {
+  list-style-type: none;
+  position: fixed;
+  margin: -10px;
+}
+
+li.a {
+  display: inline;
+  border: 1px solid gray;
+  font-family: "Gill Sans", "Times new Roman", "Batang", "Droid Sans", "Segoe UI", serif;
+  color: black;
+  padding: 5px;
+  border-radius: 5px 5px;
+  background-color: gray;
 }
 
 h1 {
   color:white;
   text-align:center;
-  font-size: 3.375em;
+  font-size: 1em; /* testing new font size 3.375em;*/
+  text-transform: uppercase; /*All caps is a design choice...*/
   line-height: .059em;
   margin: 1.21em;
 
 }
 
+h1 b {
+  font-size: 3em; /*Make Chase really big*/
+  display: block; /*Put Chase on its own line*/
+  line-height: .5em;
+}
+
 h2 {
-  text-align:center;
-  color:white;
+  margin-left: 1em;
+  color: black;
   font-size: 1.781em;
   line-height: .792em
+  padding-top: 35%;
+  
+  
 }
 
 h3 {
-   text-align:left;
+   margin-top: 1em;
+   margin-left: 1.5em;
    font-family: Gill Sans
+  
 }
 
 h4 {
@@ -59,39 +111,54 @@ h4 {
   font-family: Gill Sans;
 }
 
-p {
+h5 {
+  text-align: left;
   font-family: Gill Sans;
 }
-/* Need to enlarge logo */
-#logos {
-  list-style-type: none;
-  width: 90%;
-  padding: 2em;
-} /*take out bullet points*/
+h6 {
+  text-align: left;
+  font-family: Gill Sans;
+  font: italic;
 
-#logos div {
+}
+ul.b {
+  margin: 2.5em;
+}
+li.b {
+  margin: 2.5em;
+}
+
+p {
+  font-family: Gill Sans;
+  text-align: 2em;
+  margin: .5em 2.5em .5em 2.5em;
+}
+
+
+#logos {
   float:center;
-  width:50%;
+  width:75%;
 }
 
 .clear {
   clear:both;
 }
 
-.module {
+/*--
+#summary {
   padding:2em;
-}
+}--*/
 
-#module1 {
-  background-color:green;
-}
-
-#module2 {
+#summary {
   background-color: yellow;
 }
 
-#module4 {
+#inbrief {
   background-color: yellow;
+}
+
+#schedule {
+  background-color: white;
 }
 
 
@@ -104,8 +171,11 @@ p {
   margin: 0;
 
 }
-footer {
-  background-color:green;
+#footer {
+  background-color: green;
+  clear: both;
+  text-align: center;
+  padding: 5px;
 }
 }
 
