@@ -1,8 +1,8 @@
-/* 
+/*
 YUI 3.17.2 (build 9c3c78e)
 Copyright 2014 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
-http://yuilibrary.com/license/ 
+http://yuilibrary.com/license/
 */
 
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
@@ -16,30 +16,29 @@ html {
 html {
   font-family: "Gill Sans", "Times new Roman", "Batang", "Droid Sans", "Segoe UI", serif;
   line-height: 1em; /* 19px @ 1:1.5 Modular Scale used modularscale.com for conversions*/;
-  font-size: 1.188em; 
+  font-size: 1.188em;
   margin:0;
   padding:0;
 }
 
 body {
   line-height: 1.5em;
-  margin:0;
+  margin:0 auto 0 auto;
+  max-width: 50em;
+
 }
 
-@media all and (max-width: 45.652em) and (min-width: 30.435em), (min-width: 68.478em) 
 
-@media only screen and (min-device-width: 20em)
-   and (max-device-width: 30em)
 
 
 
 p {
   font-size: 1em;
-  line-height: 1em;
-  margin: 1.5em;
+  line-height: 1.5em;
+  margin: 1em;
   margin-left: 3.375em;
   padding-bottom: 1.5em;
-
+  max-width: 35em;
 }
 
 
@@ -49,29 +48,41 @@ div {
 }
 
 #navigation {
-  position: fixed;
+  width: 100%
+  max-width: 40em;
+  margin: 0 auto 0 auto
+  line-height: 1em;
   top: 0px;
-  width: 100%;
   color: #ffffff
   height: 1.5em;
-  text-align: center;
-  padding-top: 15px;
+  padding-top: .3em;
   /* adds shadow to the bottom of the bar */
   -webkit-box-shadow: 0px 0px 8px 0px #000000;
   -moz-box-shadow: 0px 0px 8px 0px #000000;
-  */ adds the transparent background */
-  background-color: rgba(1, 1, 1, 0.8);
-  color: rgba(1, 1, 1, 0.8);
+  /* adds the transparent background */
+
+  color: white;
 
 
 }
 
+#navigation li {
+  width: 90%
+  display block;
+  margin-left: .49em;
+  max-width: 30 em;
+  margin-bottom: .49em;
+  background-color: green;
+}
+
 #navigation a {
+  display: inline-block;
+  width: 90%
+  padding-left:.269em;
   font-size: .792em;
-  padding-left: .9375em;
-  padding-right: .9375em;
+  padding-right: 3em;
   color: white;
-  text-decoration: none;
+  max-width: 30em;
 }
 
 #navigation a:hover {
@@ -102,7 +113,7 @@ li.a {
   padding: 5px;
   border-radius: 5px 5px;
   background-color: gray;
-} 
+}
 
 h1 {
   color:white;
@@ -110,31 +121,32 @@ h1 {
   font-size: 1.188em; /* testing new font size 3.375em;*/
   text-transform: uppercase; /*All caps is a design choice...*/
   line-height: .059em;
-  margin: 1.21em;
+  margin: 2em 0 1em 0;
 
 }
 
 h1 b {
   font-size: 3.375em; /*Make Chase really big*/
   display: block; /*Put Chase on its own line*/
-  line-height: .667em;
+  line-height: 2em;
 }
 
 h2 {
   margin-left: 1em;
   color: black;
   font-size: 1.781em;
-  line-height: .792em
-  padding-top: 35%;
-  
-  
+  line-height: .792em;
+  patting-top: 2em;
+  text-transform: uppercase;
 }
 
 h3 {
    margin-top: 1em;
    margin-left: 1.5em;
-   font-family: Gill Sans
-  
+   font-family: Gill Sans;
+  text-transform: uppercase;
+  padding-top: 1em;
+
 }
 
 h4 {
@@ -210,5 +222,19 @@ p {
   text-align: center;
   padding: 5px;
 }
+
+@media screen and (min-width: 38em) {
+  #navigation{
+  width:auto;
+  max-width: 40em;
+  margin: 0 auto 1em auto;
+  }
+
+  #navigation li {
+  display: inline-block;
+  width: auto;
+  max-width: 15em;
+  }
 }
+
 
